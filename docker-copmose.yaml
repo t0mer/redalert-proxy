@@ -1,0 +1,11 @@
+version: "3.6"
+services:
+  redalert-proxy:
+    image: techblog/redalert-proxy
+    container_name: redalert_proxy
+    restart: always
+    environment:
+      - LANGUAGE=[Alerts History Language]
+      - REGION=[* for any or region name)
+    ports:
+      - "8080:8080"
